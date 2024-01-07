@@ -1,0 +1,1 @@
+g++  "C:\Users\SMART_CLOUD\Desktop\Project\airline\main.cpp"  "C:\Users\SMART_CLOUD\Desktop\Project\airline\user\user.cpp"  "C:\Users\SMART_CLOUD\Desktop\Project\airline\user\user.cpp"  "C:\Users\SMART_CLOUD\Desktop\Project\airline\user\admin\admin.cpp" "C:\Users\SMART_CLOUD\Desktop\Project\airline\tickets\tickets.cpp"

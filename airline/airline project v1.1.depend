@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1700575955 source:c:\users\smart_cloud\desktop\project\airline\main.cpp
+	<fstream>
+	<windows.h>
+	<unistd.h>
+	<iostream>
+	<cstdlib>
+	"user/customer/customer.h"
+	"tickets/tickets.h"
+	"user/admin/admin.h"
+	"user/user.h"
+
+1700575956 c:\users\smart_cloud\desktop\project\airline\user\customer\customer.h
+	"../user.h"
+	"../../tickets/tickets.h"
+
+1700575955 c:\users\smart_cloud\desktop\project\airline\user\user.h
+	<iostream>
+	<fstream>
+
+1700572845 c:\users\smart_cloud\desktop\project\airline\tickets\tickets.h
+	<iostream>
+
+1700575957 c:\users\smart_cloud\desktop\project\airline\user\admin\admin.h
+	"../user.h"
+	"../../tickets/tickets.h"
+
+1704614913 source:c:\users\smart_cloud\desktop\airline\main.cpp
+	<fstream>
+	<windows.h>
+	<unistd.h>
+	<iostream>
+	<cstdlib>
+	"user/customer/customer.h"
+	"tickets/tickets.h"
+	"user/admin/admin.h"
+	"user/user.h"
+	"resource.h"
+
+1700584799 c:\users\smart_cloud\desktop\airline\user\customer\customer.h
+	"../user.h"
+	"../../tickets/tickets.h"
+
+1700586115 c:\users\smart_cloud\desktop\airline\user\user.h
+	<iostream>
+	<fstream>
+	<string>
+
+1700584794 c:\users\smart_cloud\desktop\airline\tickets\tickets.h
+	<iostream>
+
+1700584802 c:\users\smart_cloud\desktop\airline\user\admin\admin.h
+	"../user.h"
+	"../../tickets/tickets.h"
+
+1704622255 source:c:\users\smart_cloud\desktop\airline\tickets\tickets.cpp
+	"tickets.h"
+	<fstream>
+	<iostream>
+	<vector>
+	<algorithm>
+
+1704622244 source:c:\users\smart_cloud\desktop\airline\user\admin\admin.cpp
+	"admin.h"
+	<unistd.h>
+	<windows.h>
+	<unistd.h>
+
+1704621244 source:c:\users\smart_cloud\desktop\airline\user\customer\customer.cpp
+	"customer.h"
+	<fstream>
+	<ctime>
+	<windows.h>
+	<unistd.h>
+
+1704616070 source:c:\users\smart_cloud\desktop\airline\user\user.cpp
+	"user.h"
+	<iostream>
+	<fstream>
+	<string>
+
+1704610023 c:\users\smart_cloud\desktop\airline\resource.h
+
+1704611139 source:c:\users\smart_cloud\desktop\airline\resources.rc
+	"resource.h"
+
