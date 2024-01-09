@@ -1,6 +1,9 @@
 #ifndef TICKETS_H
 #define TICKETS_H
-
+#include <fstream>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 #include <iostream>
 using namespace std;
 

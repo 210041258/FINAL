@@ -1,7 +1,6 @@
 // user.h
 #ifndef USER_H
 #define USER_H
-
 #include <iostream>
 #include <fstream>
 #include <string>

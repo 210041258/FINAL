@@ -32,6 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="employee/driver/driver.cpp" />
+		<Unit filename="employee/driver/driver.h" />
+		<Unit filename="employee/employee.cpp" />
+		<Unit filename="employee/employee.h" />
+		<Unit filename="employee/host/host.cpp" />
+		<Unit filename="employee/host/host.h" />
+		<Unit filename="employee/repairman/repairman.cpp" />
+		<Unit filename="employee/repairman/repairman.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="resource.h" />
 		<Unit filename="resources.rc">

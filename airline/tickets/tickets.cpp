@@ -1,8 +1,5 @@
 #include "tickets.h"
-#include <fstream>
-#include <iostream>
-#include <vector>
-#include <algorithm>
+
 
 using namespace std;
 
@@ -18,7 +15,9 @@ tickets::tickets(int _id, string _from, string _where, string _date_go, string _
     t_cov_req = _t_cov_req;
     if(!(search_id(_id)))
     {
+        if(id != 0){
         save_ticket_direct();
+        }
     }
 }
 

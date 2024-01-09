@@ -1,8 +1,5 @@
 #include "admin.h"
-#include <unistd.h>
-#include <windows.h>
-#include <unistd.h>
-#define wait_and_cleen sleep(3); system("cls");
+
 
 struct temp_tk{
 int id;
@@ -33,7 +30,7 @@ void admin::gui_1()
 }
 
 admin::admin(string _username, string _password, int _access, int _admin_access, int _co_cert_, int _visa_cert_, int _balance_)
-    : user(_username, _password, _access, _admin_access, _co_cert_, _visa_cert_, _balance_)
+    : user(_username, _password, _access, _admin_access, _co_cert_, _visa_cert_, _balance_) , tickets() , employee()
 {
 }
 admin::~admin() {}
@@ -41,20 +38,47 @@ admin::~admin() {}
 void admin::admin_dashboard()
 {
     cout << "Welcome to admin panel" << endl;
-    cout << "1 - Add Ticket" << endl;
-    cout << "2 - Edit Ticket" << endl;
-    cout << "3 - Delete Ticket" << endl;
-    cout << "4 - Specific Ticket Info" << endl;
-    cout << "5 - Block User" << endl;
-    cout << "6 - Track Operation Specific User" << endl;
-    cout << "7 - Specific User Info" << endl;
-    cout << "8 - Logout\n"
-         << endl;
+    cout << "'-1' - Add Duty" << endl;
+    cout << "'0' - Add Employee" << endl;
+    cout << "'1' - Add Ticket" << endl;
+    cout << "'2' - Edit Ticket" << endl;
+    cout << "'3' - Delete Ticket" << endl;
+    cout << "'4' - Specific Ticket Info" << endl;
+    cout << "'5' - Block User" << endl;
+    cout << "'6' - Track Operation Specific User" << endl;
+    cout << "'7' - Specific User Info" << endl;
+    cout << "'8' - Logout\n"<< endl;
     cout << "Enter the number : " << endl;
     int x;
+    int a;
     cin >> x;
     switch (x)
     {
+    case -1:
+         a = employee::add_duty();
+        if(a){
+            cout << "Duty Recorded !!  \n" ;
+            wait_and_cleen
+            admin::gui_1();
+        }else{
+            cout << "Duty Not Recorded Check your Data!!  \n" ;
+            wait_and_cleen
+            admin::gui_1();
+            }
+        break;
+    case 0:
+         a = employee::add_employee();
+        if(a){
+            cout << "Employee Recorded !!  \n" ;
+            wait_and_cleen
+            admin::gui_1();
+        }
+else{
+            cout << "Employee Not Recorded Check your Data!!  \n" ;
+            wait_and_cleen
+            admin::gui_1();
+            }
+        break;
     case 1:
         admin::add_ticket();
         break;

@@ -1,7 +1,5 @@
 #include "user.h"
-#include <iostream>
-#include <fstream>
-#include <string>
+
 
 using namespace std;
 
@@ -17,7 +15,11 @@ user::user(string _username, string _password, int _access, int _admin_access, i
     balance = _balance_;
     if(!(user::search_username(username)))
     {
-        save_user_direct();    }
+        if(username != "")
+        {
+            save_user_direct();
+        }
+    }
 }
 user::~user()
 {
@@ -209,7 +211,11 @@ int user::print_user_operation(string username_)
     }
     f4.close();
     cout << " The User as " << username_ << " Have Operation as : "  << counter << endl;
-    if(counter){return 1;}return 0;
+    if(counter)
+    {
+        return 1;
+    }
+    return 0;
 }
 
 void user::save_user_operation(string username_, int id_, int value)
@@ -249,10 +255,14 @@ int user::return_user_operation(string username_, int id_, int value)
                 f6 << username_ << " " << id_ << " " << value << endl;
             }
         }
-        f6.close();
         f5.close();
-        remove("operation_user.txt") ;
-        rename("operation_user_new.txt", "operation_user.txt");
+        f6.close();
+        if(remove("operation_user.txt"))
+        {
+        }
+        if(rename("operation_user_new.txt", "operation_user.txt"))
+        {
+        }
     }
     catch (error_file_not_founded)
     {
